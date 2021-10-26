@@ -6,7 +6,7 @@ print("Input the number you want to convert")
 number = input()[::-1]
 sum_of_digits = 0
 
-# Convert the base10 numbers to the correct base16 digits
+# Convert the base16 digits to the correct base 10 numbers
 for digit in str(number):
     if digit == "A":
         digit = (10)
