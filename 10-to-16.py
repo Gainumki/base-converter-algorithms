@@ -7,7 +7,12 @@ lst = []
 dontneed = [10, 11, 12, 13, 14, 15]
 
 # Get the number to convert
-num = int(input("Enter a number: "))
+val = int(input("Enter a number: "))
+num = abs(val)
+if val < 0:
+    pre = "-"
+else:
+    pre = ""
 
 # Perform the algorithm and save results in list
 while loop == 0:
@@ -32,4 +37,5 @@ while loop == 0:
     if num == 0:
         loop = 1
         lst.reverse()
-        print(''.join(lst))
+        output = pre + ''.join(lst)
+        print(output)
